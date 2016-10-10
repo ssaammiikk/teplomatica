@@ -69,8 +69,6 @@ $(function(){
             adaptiveHeight: true
         });
     }
-	
-
 });
 
 var handler = function(){
