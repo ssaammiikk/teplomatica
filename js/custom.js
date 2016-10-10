@@ -68,7 +68,33 @@ $(function(){
             slidesToShow: 1,
             adaptiveHeight: true
         });
-    }
+    };
+    
+    
+    $('.button-minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.button-plus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) + 1;
+        count = count > ($input.attr("maxlength")) ? ($input.attr("maxlength")) : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    
+    $('.list-basket__close').click(function(){
+        $(this).parent().remove();
+		return false;
+	});
+    
+    
+    
 });
 
 var handler = function(){
