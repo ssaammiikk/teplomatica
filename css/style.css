@@ -62,11 +62,12 @@ p{
 	color: #17202f;
 }
 h1{
-	font-size: 2em;
-	line-height: 1.1em;
-	padding: 15px 0 15px 0;
-	font-weight: 400;
-	color: #17202f;
+	padding: 18px 0 18px 0;
+    color: #555;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
 }
 h2{
 	font-size: 1.8em;
@@ -2715,6 +2716,47 @@ aside{
     padding-left: 300px;
     padding-top: 33px;
 }
+
+.box-breadrumbs {
+    margin-bottom: 40px;
+    padding: 23px 0;
+    background-color: #ebebeb;
+}
+.breadrumbs-list {
+    list-style-type: none;
+    margin: 0;  
+    padding: 0;
+}
+.breadrumbs-list__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    color: #989898;
+    font-size: 16px;
+}
+.breadrumbs-list__link {
+    position: relative;
+    display: block;
+    padding-right: 20px;
+    color: inherit;   
+}
+.breadrumbs-list__link:hover {
+    text-decoration: underline;
+}
+.breadrumbs-list__link:after {
+    content: "\f105";
+    position: absolute;
+    top: 1px;
+    right: 0;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
 
 .catalog{
     position: relative;
