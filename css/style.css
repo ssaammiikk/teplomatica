@@ -301,8 +301,8 @@ label a:hover {
 }
 .styled_block {
     width: 100%;
-    margin-bottom: 19px;
 }
+.select-wrap {margin-bottom: 19px;}
 textarea {
     min-height: 126px;
     resize: none;

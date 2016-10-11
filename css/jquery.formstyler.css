@@ -4,9 +4,8 @@
 	cursor: pointer;
 }
 .jq-checkbox:after {
-	content: "\f046";
-    color: #555;
-    margin-right: 5px;
+	width: 16px;
+	content: "\f096";
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -15,6 +14,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 .jq-checkbox.checked:after {
+	content: "\f046";
 	color: #3cb5e7;
 }
 
