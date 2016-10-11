@@ -34,7 +34,7 @@
             <h1>Оформление заказа</h1>
             <a href="#" class="link-back visible-mobile-inline" style="display: none;">
             <span class="link-back__icon"><i class="fa fa-angle-left" aria-hidden="true"></i></span>Вернуться в корзину</a>
-            <div class="line-total-basket clearfix">
+            <div class="line-total-basket line-total-basket_top clearfix">
                 <div class="line-total-basket__left">
                     <a href="#" class="button button_primary btn-lg hide-mobile">Вернуться в корзину</a>
                     <p class="line-total-basket__info">Общий вес товаров: 340 кг.</p>
@@ -45,7 +45,7 @@
                 </div>
             </div>
 
-            <form class="form-horizontal box" role="form">
+            <form class="form form-horizontal box" role="form">
                 <div class="form-group has-feedback">    
                     <div class="row">
                         <label for="inputEmail3" class="col-sm-4 control-label">Имя получателя: <span class="control-label__text">Для документов</span></label>
@@ -109,12 +109,13 @@
                     <label for="inputEmail3" class="control-label">Комментарии по доставке:<span class="control-label__text">Дополнительная информация по доставке</span></label>
                     <textarea class="form-control"></textarea>
                 </div>
-                
-                <label class="list-check__label">
-                    <input type="checkbox" name="check_1" class="styled">
-                    <span class="label-text">Я соглашаюсь с пользовательским соглашением и правилами возврата</span>
-                </label>
-                <button type="submit" class="btn btn-default">Войти</button>
+                <div class="checkbox">
+                    <label class="list-check__label">
+                        <input type="checkbox" name="check_1" class="styled">
+                        <span class="label-text">Я соглашаюсь с <a href="#">пользовательским соглашением</a> и <a href="#">правилами возврата</a></span>
+                    </label>
+                </div>
+                <button type="submit" class="button button_primary btn-lg">Подтвердить заказ</button>
                 
             </form>
         </div>         
