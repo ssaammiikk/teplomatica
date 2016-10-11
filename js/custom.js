@@ -34,6 +34,7 @@ $(function(){
 		$('.menu').toggleClass('open');
         $('.js-open-catalog').removeClass('open');
         $('.sidebar-catalog').removeClass('open'); 
+        $('body').removeClass('open-catalog');
 		return false;
 	});
     
@@ -43,6 +44,7 @@ $(function(){
 		$('.sidebar-catalog').toggleClass('open'); 
         $('.menu').removeClass('open'); 
         $('.js-nav').removeClass('open');
+        $('body').toggleClass('open-catalog');
 		return false;
 	});
     
