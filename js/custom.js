@@ -71,7 +71,9 @@ $(function(){
             adaptiveHeight: true
         });
     };
-    
+    if($(".styled").length){
+    	$('.styled').styler();
+    };
     
     $('.button-minus').click(function () {
         var $input = $(this).parent().find('input');

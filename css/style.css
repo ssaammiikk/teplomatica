@@ -265,7 +265,10 @@ label {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    margin-bottom: 0;
+    margin-bottom: 15px;
+}
+.form-horizontal .control-label {
+    margin-bottom: 15px;
 }
 .control-label__text {
     display: block;
@@ -277,6 +280,7 @@ label {
     height: 38px;
     padding-right: 15px;
     padding-left: 15px;
+    margin-bottom: 15px;
     background-color: white;
     border: 1px solid #dfdfdf;
     border-radius: 0;
@@ -284,10 +288,21 @@ label {
     font-size: 16px;
     font-weight: 400;
 }
+.styled_block {
+    width: 100%;
+    margin-bottom: 15px;
+}
+textarea {
+    min-height: 126px;
+    resize: none;
+}
 .form-horizontal .form-group {
     margin: 0;
-    padding: 14px 0 18px;
+    padding: 14px 0 0;
     border-bottom: 1px solid #f4f4f4;;
+}
+.form-horizontal .form-group .alert {
+    margin: 0 0 14px;
 }
 .form-horizontal .control-label {
     text-align: left;
@@ -304,9 +319,11 @@ label {
 .form-control-feedback.error {color: #d86010;}
 
 .alert {
-    margin-top: 18px;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
 }
-
+.alert-danger {background-color: #ffdedf; color: #b84141;}
 /* fonts */
 @font-face {
 	font-family:'PFDinDisplayPro';

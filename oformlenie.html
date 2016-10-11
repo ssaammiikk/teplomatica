@@ -7,6 +7,7 @@
 	<title>Teplomatika - oformlenie</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />		
 	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->		
 </head>
@@ -66,20 +67,55 @@
                         Ошибка: это поле не может содержать цифры. Только буквы русского алфавита. 
                     </div>
                 </div>
-                <div class="form-group">
-                <div class="col-sm-offset-4 col-sm-8">
-                <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Запомнить меня
+                <div class="form-group">    
+                    <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 control-label">Телефон:<span class="control-label__text">Для уточнения заказа</span></label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="8 (950) 675-45-21">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">    
+                    <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 control-label">E-mail:<span class="control-label__text">Для уведомления о заказе</span></label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Фамилия">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">    
+                    <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 control-label">Способ доставки:<span class="control-label__text">Выберите способ доставки</span></label>
+                        <div class="col-sm-8">
+                            <select class="styled styled_block">
+                                <option value="Доставка по России">Доставка по России</option>
+                                <option value="Доставка по Украине">Доставка по Украине</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">    
+                    <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 control-label">Форма оплаты:<span class="control-label__text">Выберите одну из карт</span></label>
+                        <div class="col-sm-8">
+                            <select class="styled styled_block">
+                                <option value="Наличными Курьеру">Наличными Курьеру</option>
+                                <option value="Наличными на почте">Наличными на почте</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">    
+                    <label for="inputEmail3" class="control-label">Комментарии по доставке:<span class="control-label__text">Дополнительная информация по доставке</span></label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                
+                <label class="list-check__label">
+                    <input type="checkbox" name="check_1" class="styled">
+                    <span class="label-text">Я соглашаюсь с пользовательским соглашением и правилами возврата</span>
                 </label>
-                </div>
-                </div>
-                </div>
-                <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" class="btn btn-default">Войти</button>
-                </div>
-                </div>
+                
             </form>
         </div>         
         
@@ -247,7 +283,9 @@
 	
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>		
 	<script type="text/javascript" src="js/jquery-migrate.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
     <script type="text/javascript" src="js/slick.js" ></script>
 	<script type="text/javascript" src="js/custom.js" ></script>
+
 </body>
 </html>
