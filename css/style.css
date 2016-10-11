@@ -250,7 +250,7 @@ h6 {
 .text-center{text-align: center!important}
 .text-right{text-align: right!important}
 .nowrap{white-space: nowrap!important;}
-
+.mb20 {margin-bottom: 20px !important;}
 
 /* loader */
 .loaded .main-wrapper{visibility:hidden;}
@@ -259,17 +259,28 @@ h6 {
 
 
 /* forms */
+form button[type="submit"] {
+    margin: 20px 0 15px;
+}
+.form {margin-bottom: 40px;}
+.form-horizontal .checkbox {padding: 15px 0;}
+.form-horizontal .list-check__label {padding-left: 0 ;}
 
 label {
     color: #555;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
 }
-.form-horizontal .control-label {
-    margin-bottom: 15px;
+label a {
+    color: #3cb5e7;
+    text-decoration: underline;
 }
+label a:hover {
+    text-decoration: none;
+}
+.form-horizontal .control-label {margin-bottom: 15px;}
 .control-label__text {
     display: block;
     color: #7d7d7d;
@@ -280,7 +291,7 @@ label {
     height: 38px;
     padding-right: 15px;
     padding-left: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
     background-color: white;
     border: 1px solid #dfdfdf;
     border-radius: 0;
@@ -290,8 +301,8 @@ label {
 }
 .styled_block {
     width: 100%;
-    margin-bottom: 15px;
 }
+.select-wrap {margin-bottom: 19px;}
 textarea {
     min-height: 126px;
     resize: none;
@@ -302,7 +313,7 @@ textarea {
     border-bottom: 1px solid #f4f4f4;;
 }
 .form-horizontal .form-group .alert {
-    margin: 0 0 14px;
+    margin: 0 0 11px;
 }
 .form-horizontal .control-label {
     text-align: left;
@@ -3791,6 +3802,7 @@ aside{
     padding: 12px;
     margin: 0 0 40px 0;
 }
+.line-total-basket_top {margin: 19px 0;}
 .line-total-basket__right{
     float: right;
     text-align: right;
@@ -3821,6 +3833,7 @@ aside{
     -moz-border-radius: 0; 
     -webkit-border-radius: 0;
     font-size: 19px;
+    padding-top: 0;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -4693,6 +4706,7 @@ footer{
         padding-bottom: 18px;
         margin-bottom: 0px;
     }
+    .line-total-basket_top {margin: 19px 0;}
     .line-total-basket .button {margin-top: 27px;}
     .line-total-basket__info{
         display: block;
