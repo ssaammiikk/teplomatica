@@ -94,6 +94,14 @@ $(function(){
         $(this).parent().remove();
 		return false;
 	});
+
+	$(".js-show-toggle").toggle(function() {
+		$('.text-show-toggle').slideToggle();
+		$(this).text("Свернуть");
+	 }, function() {
+		$('.text-show-toggle').slideToggle();
+		$(this).text("Развернуть, чтобы узнать подробности");
+	});
     
     
     
