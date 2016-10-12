@@ -92,6 +92,10 @@ $(function(){
     if($(".styled").length){
     	$('.styled').styler();
     };
+
+    if($('.tel_mask').length){
+        $('.tel_mask').mask('8(999) 999-99-99');
+    };
     
     $('.button-minus').click(function () {
         var $input = $(this).parent().find('input');
