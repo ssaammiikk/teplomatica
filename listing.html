@@ -52,7 +52,7 @@
     
         <div class="container-fluid">
             <aside class="sidebar-catalog">
-                <div class="sidebar-cont">
+                <div class="sidebar-cont sidebar-cont_catalog">
                     <ul class="catalog mini">
                         <li class="catalog__item catalog__item_close">
                             <a href="#" class="catalog__link">
@@ -470,7 +470,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="sidebar-cont">
+                <div class="sidebar-cont sidebar-cont_filter" id="id-filter">
                     <ul class="catalog mini filter">
                         <li class="catalog__item">
                             <a href="#" class="catalog__link for-filter">
@@ -1178,9 +1178,35 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Глубина <span class="sub-text-link big">(мм.)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
+                    <div class="line-button-filter">
+                        <a href="#" class="button button_primary button_large">Сбросить фильтр</a>
+                    </div>
                 </div>
-                <div class="banners">
+                <div class="banners banners_top hide-tablet">
                     <img src="img/banners2.png" alt="">
                     <div class="banners__info">
                         <span class="banners__title">Котлы Protherm</span>
@@ -1190,20 +1216,58 @@
             </aside>
             <div class="content-right">
                 <h1>Комбинированные котлы</h1>
-                <article class="box box-page tinymce opt2">
+                <article class="box box-page tinymce opt2 js-parents-toggle">
                     <div class="title-with-link clearfix">
                         <h3>Виды универсальных котлов</h3>
-                        <a href="#" class="title-with-link__link">Свернуть, чтоб не мешало</a>
+                        <a href="#" class="title-with-link__link js-show-text">Свернуть, чтоб не мешало</a>
                     </div>
-                    <ol>
-                        <li>Твердое топливо/электричество, в том числе дрова/электричество и электричество/уголь. Уникальная конструкция позволяет использовать эти виды топлива одновременно. Электричество используется как вторичный источник тепла, чаще для поддержания температуры теплоносителя, а не для его нагрева.</li>
-                        <li>Газ/дрова/электричество. Такое оборудование обычно имеет две камеры сгорания, дополнительно комплектуется еще и ТЕНом.</li>
-                        <li>Газ/твердое топливо. Это могут быть агрегаты типа газ/дрова, пеллеты/газ, уголь/газ. Не требуют проведения сложных работ по усовершенствованию. Их камера сгорания изначально предполагает сжигание различных типов топлива.</li>
-                        <li>Газ/электричество. В данном случае электричество — это дополнительный источник тепла и используется в основном для поддержания температуры.</li>
-                    </ol>
-                    <p>Как и другие модели, агрегаты, работающие на различных видах топлива, могут быть настенные и напольные. Чугунные комбинированные котлы имеют большие габариты и вес, поэтому чаще устанавливаются на пол. Более легкий и компактный газовый котел можно крепить на стену. Рекомендуем доверить монтаж и подключение данного вида оборудования специалистам нашей компании.</p>
+                    <div class="js-toggle">
+                        <ol>
+                            <li>Твердое топливо/электричество, в том числе дрова/электричество и электричество/уголь. Уникальная конструкция позволяет использовать эти виды топлива одновременно. Электричество используется как вторичный источник тепла, чаще для поддержания температуры теплоносителя, а не для его нагрева.</li>
+                            <li>Газ/дрова/электричество. Такое оборудование обычно имеет две камеры сгорания, дополнительно комплектуется еще и ТЕНом.</li>
+                            <li>Газ/твердое топливо. Это могут быть агрегаты типа газ/дрова, пеллеты/газ, уголь/газ. Не требуют проведения сложных работ по усовершенствованию. Их камера сгорания изначально предполагает сжигание различных типов топлива.</li>
+                            <li>Газ/электричество. В данном случае электричество — это дополнительный источник тепла и используется в основном для поддержания температуры.</li>
+                        </ol>
+                        <p>Как и другие модели, агрегаты, работающие на различных видах топлива, могут быть настенные и напольные. Чугунные комбинированные котлы имеют большие габариты и вес, поэтому чаще устанавливаются на пол. Более легкий и компактный газовый котел можно крепить на стену. Рекомендуем доверить монтаж и подключение данного вида оборудования специалистам нашей компании.</p>
+                    </div>
                 </article>
-                <div class="box-products">
+                <div class="line-open-filter">
+                    <a href="#id-filter" class="button-nav style2 opt2 js-open-filter js-scrool-to">
+                        <span class="icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span class="button-nav__name">Фильтр по товарам</span>
+                    </a>
+                </div>
+                <div class="box-products top">
+                    <div class="line-sort-product clearfix">                        
+                        <div class="line-sort-product__left hide-mobile">
+                            <p class="line-sort-product__result">Найдено товаров: <span>482</span></p>
+                        </div>
+                        <div class="line-sort-product__right">
+                            <div class="line-sort-product__item">
+                                <p class="line-sort-product__label">Сортировать:</p>
+                                <div class="line-sort-product__select style2">
+                                    <select class="styled styled_block">
+                                        <option value="Доставка по России">по цене</option>
+                                        <option value="Доставка по Украине">по рейтингу</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="line-sort-product__item hide-mobile">
+                                <p class="line-sort-product__label">Кол-во товара на странице:</p>
+                                <div class="line-sort-product__select style2 short">
+                                    <select class="styled styled_block">
+                                        <option value="Доставка по России">9</option>
+                                        <option value="Доставка по Украине">18</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
                     <div class="row">
                         <ul class="list-product">
                             <li class="list-product__item col-lg-4 col-md-6 col-sm-6 col-xs-12">
@@ -1343,8 +1407,9 @@
                                 </div>
                             </li>
                         </ul>
-                        <a href="#" class="button-load-more"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Загрузить еще советов</a>
                     </div>
+                    <a href="#" class="button-load-more"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Загрузить еще советов</a>
+                    
                 </div>
                 <h2 class="lg">Советы покупателю <a href="#" class="heading-link">Все советы</a></h2>
 

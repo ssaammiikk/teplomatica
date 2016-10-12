@@ -33,18 +33,36 @@ $(function(){
 		$(this).toggleClass('open'), 
 		$('.menu').toggleClass('open');
         $('.js-open-catalog').removeClass('open');
-        $('.sidebar-catalog').removeClass('open'); 
+        $('.js-open-filter').removeClass('open');
+        $('.sidebar-cont_filter').removeClass('open'); 
+        $('.sidebar-cont_catalog').removeClass('open'); 
         $('body').removeClass('open-catalog');
+        $('body').removeClass('open-filter');
 		return false;
 	});
     
     /* open catalog */
     $('.js-open-catalog').click(function(){
 		$(this).toggleClass('open'), 
-		$('.sidebar-catalog').toggleClass('open'); 
+		$('.sidebar-cont_catalog').toggleClass('open'); 
         $('.menu').removeClass('open'); 
         $('.js-nav').removeClass('open');
+        $('.js-open-filter').removeClass('open');
+        $('.sidebar-cont_filter').removeClass('open'); 
         $('body').toggleClass('open-catalog');
+        $('body').removeClass('open-filter');
+		return false;
+	});
+    
+    /* open ашдеук */
+    $('.js-open-filter').click(function(){
+		$(this).toggleClass('open'), 
+		$('.sidebar-cont_filter').toggleClass('open'); 
+        $('.menu').removeClass('open'); 
+        $('.js-open-catalog').removeClass('open');
+        $('.sidebar-cont_catalog').removeClass('open'); 
+        $('body').toggleClass('open-filter');
+        $('body').removeClass('open-catalog');
 		return false;
 	});
     
@@ -122,6 +140,21 @@ $(function(){
             }
          });
     };
+    
+    $(".js-show-text").toggle(function () {
+        $(this).parents('.js-parents-toggle').find('.js-toggle').slideUp();
+        $(this).text("Развернуть, чтобы узнать подробности");
+        $(this).addClass('active');
+    }, function () {
+        $(this).parents('.js-parents-toggle').find('.js-toggle').slideDown();
+        $(this).text("Свернуть, чтоб не мешало");
+        $(this).removeClass('active');
+    });
+    
+    $(".js-scrool-to").click(function () {
+        var target_scroll3 = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target_scroll3).offset().top}, 1000);
+    });
 });
 
 var handler = function(){
