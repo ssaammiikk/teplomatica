@@ -7,6 +7,8 @@
 	<title>Teplomatica - Listing</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />		
 	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->		
 </head>
@@ -468,11 +470,731 @@
                         </li>
                     </ul>
                 </div>
+                <div class="sidebar-cont">
+                    <ul class="catalog mini filter">
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__link for-filter">
+                                быстрые фильтры
+                            </a>
+                            <ul class="catalog-lvl2">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Напольные</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Настенные</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <a href="#" class="filter__link">Одноконтурные</a>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <a href="#" class="filter__link">Двухконтурные</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item top">
+                            <a href="#" class="catalog__link big">
+                                Цена <span class="sub-text-link big">(руб.)</span>
+                            </a>
+                            <div class="catalog-lvl2 left">
+                                <div class="slider-price clearfix">
+                                    <div id="slider_price"></div>
+									<div class="field-input-filter price">
+								        <input class="form-control" type="text" name="name1" value="0" id="min_cost_1">
+                                    </div>
+                                    <div class="field-input-filter price right">
+                                        <input class="form-control" type="text" name="name1" value="46000" id="max_cost_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__link">
+                                Производители
+                            </a>
+                            <ul class="catalog-lvl2">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_3" class="styled">
+                                            <span class="label-text">ACV (АЦВ)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_4" class="styled">
+                                            <span class="label-text">Ariston (Аристон)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_5" class="styled">
+                                            <span class="label-text">Baxi (Бакси)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_6" class="styled">
+                                            <span class="label-text">De Dietrich (Де Дитриш)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_7" class="styled">
+                                            <span class="label-text">Kiturami (Китурами)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_8" class="styled">
+                                            <span class="label-text">Navien (Навьен)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_9" class="styled">
+                                            <span class="label-text">Rinnai (Риннай)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_10" class="styled">
+                                            <span class="label-text">Unical (Юникал)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_11" class="styled">
+                                            <span class="label-text">Vaillant (Вайлант)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_12" class="styled">
+                                            <span class="label-text">Viessmann (Висман)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_13" class="styled">
+                                            <span class="label-text">Жуковский</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_14" class="styled">
+                                            <span class="label-text">Лемакс</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_15" class="styled">
+                                            <span class="label-text">Lamborghini (Ламборджини)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_16" class="styled">
+                                            <span class="label-text">Юнкер</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_17" class="styled">
+                                            <span class="label-text">SIME (СИМ)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_17" class="styled">
+                                            <span class="label-text">Haier (Хаер)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Серия
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Мощность <span class="sub-text-link big">(кВТ)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Отапливаемая площадь
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Тип установки
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Количество контуров
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Камера сгорания
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Диаметр дымохода <span class="sub-text-link big">(мм.)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Выходы под отопление <span class="sub-text-link big">(мм.)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Выходы под ГВС <span class="sub-text-link big">(мм.)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Гарантия <span class="sub-text-link big">(мм.)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Производительность  <span class="sub-text-link big">(л/мин.)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Объём расшир. бака <span class="sub-text-link big">(литр)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Макс. напор <span class="sub-text-link big">(м.)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Макс. глубина 
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                всасывыния
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Длина кабеля <span class="sub-text-link big">(м.)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Мин. диаметр скважины
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Объем бака <span class="sub-text-link big">(м.)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                КПД <span class="sub-text-link big">(%)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Страна производства
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Ширина <span class="sub-text-link big">(мм.)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item_close">
+                            <a href="#" class="catalog__link">
+                                Высота <span class="sub-text-link big">(мм.)</span>
+                            </a>
+                            <ul class="catalog-lvl2" style="display:none;">
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_1" class="styled">
+                                            <span class="label-text">Buderus (Будерус)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="catalog-lvl2__item">
+                                    <div class="checkbox style2">
+                                        <label class="list-check__label">
+                                            <input type="checkbox" name="check_2" class="styled">
+                                            <span class="label-text">Protherm (Протерм)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banners">
+                    <img src="img/banners2.png" alt="">
+                    <div class="banners__info">
+                        <span class="banners__title">Котлы Protherm</span>
+                        <p class="banners__text">высочайшее качество из Чехии</p>
+                    </div>
+                </div>
             </aside>
             <div class="content-right">
                 <h1>Комбинированные котлы</h1>
-                <article class="box box-page tinymce">
-                    <h3>Виды универсальных котлов</h3>
+                <article class="box box-page tinymce opt2">
+                    <div class="title-with-link clearfix">
+                        <h3>Виды универсальных котлов</h3>
+                        <a href="#" class="title-with-link__link">Свернуть, чтоб не мешало</a>
+                    </div>
                     <ol>
                         <li>Твердое топливо/электричество, в том числе дрова/электричество и электричество/уголь. Уникальная конструкция позволяет использовать эти виды топлива одновременно. Электричество используется как вторичный источник тепла, чаще для поддержания температуры теплоносителя, а не для его нагрева.</li>
                         <li>Газ/дрова/электричество. Такое оборудование обычно имеет две камеры сгорания, дополнительно комплектуется еще и ТЕНом.</li>
@@ -481,7 +1203,149 @@
                     </ol>
                     <p>Как и другие модели, агрегаты, работающие на различных видах топлива, могут быть настенные и напольные. Чугунные комбинированные котлы имеют большие габариты и вес, поэтому чаще устанавливаются на пол. Более легкий и компактный газовый котел можно крепить на стену. Рекомендуем доверить монтаж и подключение данного вида оборудования специалистам нашей компании.</p>
                 </article>
-                
+                <div class="box-products">
+                    <div class="row">
+                        <ul class="list-product">
+                            <li class="list-product__item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="product">
+                                    <a href="#" class="product__img">
+                                        <img src="img/img_product_1.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="product__title">Эван Warmos RX-30.0</a>
+                                    <div class="product__price">
+                                        <div class="product__price-cont">
+                                            560 450 <span>руб.</span>
+                                        </div>
+                                        <a href="#" class="button-in-basket"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+                                    </div>
+                                    <span class="product__price-credit">Кредит: <span class="price">56 045 руб.</span> в месяц</span>
+                                </div>
+                            </li>
+                            <li class="list-product__item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="product">
+                                    <a href="#" class="product__img">
+                                        <img src="img/img_product_2.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="product__title">Эван Warmos RX-30.0</a>
+                                    <div class="product__price">
+                                        <div class="product__price-cont">
+                                            1 560 450 <span>руб.</span>
+                                        </div>
+                                        <a href="#" class="button-in-basket"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+                                    </div>
+                                    <span class="product__price-credit">Кредит: <span class="price">156 045 руб.</span> в месяц</span>
+                                </div>
+                            </li>
+                            <li class="list-product__item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="product">
+                                    <a href="#" class="product__img">
+                                        <img src="img/img_product_3.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="product__title">Эван Warmos RX-30.0</a>
+                                    <div class="product__price">
+                                        <div class="product__price-cont">
+                                            34 560 450 <span>руб.</span>
+                                        </div>
+                                        <a href="#" class="button-in-basket"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+                                    </div>
+                                    <span class="product__price-credit">Кредит: <span class="price">340 045 руб.</span> в месяц</span>
+                                </div>
+                            </li>
+                            <li class="list-product__item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="product">
+                                    <span class="note-product"><img src="img/note_1.png" alt=""></span>
+                                    <a href="#" class="product__img">
+                                        <img src="img/img_product_4.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="product__title">Эван Warmos RX-30.0</a>
+                                    <div class="product__price">
+                                        <div class="product__price-cont">
+                                            560 450 <span>руб.</span>
+                                        </div>
+                                        <a href="#" class="button-in-basket"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+                                    </div>
+                                    <span class="product__price-credit">Кредит: <span class="price">56 045 руб.</span> в месяц</span>
+                                </div>
+                            </li>
+                            <li class="list-product__item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="product">
+                                    <a href="#" class="product__img">
+                                        <img src="img/img_product_5.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="product__title">Эван Warmos RX-30.0</a>
+                                    <div class="product__price">
+                                        <div class="product__price-cont">
+                                            1 560 450 <span>руб.</span>
+                                        </div>
+                                        <a href="#" class="button-in-basket"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+                                    </div>
+                                    <span class="product__price-credit">Кредит: <span class="price">156 045 руб.</span> в месяц</span>
+                                </div>
+                            </li>
+                            <li class="list-product__item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="product">
+                                    <a href="#" class="product__img">
+                                        <img src="img/img_product_6.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="product__title">Эван Warmos RX-30.0</a>
+                                    <div class="product__price">
+                                        <div class="product__price-cont">
+                                            34 560 450 <span>руб.</span>
+                                        </div>
+                                        <a href="#" class="button-in-basket"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+                                    </div>
+                                    <span class="product__price-credit">Кредит: <span class="price">340 045 руб.</span> в месяц</span>
+                                </div>
+                            </li>
+                            <li class="list-product__item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="product">
+                                    <a href="#" class="product__img">
+                                        <img src="img/img_product_7.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="product__title">Эван Warmos RX-30.0</a>
+                                    <div class="product__price">
+                                        <div class="product__price-cont">
+                                            560 450 <span>руб.</span>
+                                        </div>
+                                        <a href="#" class="button-in-basket"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+                                    </div>
+                                    <span class="product__price-credit">Кредит: <span class="price">56 045 руб.</span> в месяц</span>
+                                </div>
+                            </li>
+                            <li class="list-product__item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="product">
+                                    <a href="#" class="product__img">
+                                        <img src="img/img_product_8.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="product__title">Эван Warmos RX-30.0</a>
+                                    <div class="product__price">
+                                        <div class="product__price-cont">
+                                            1 560 450 <span>руб.</span>
+                                        </div>
+                                        <a href="#" class="button-in-basket"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+                                    </div>
+                                    <span class="product__price-credit">Кредит: <span class="price">156 045 руб.</span> в месяц</span>
+                                </div>
+                            </li>
+                            <li class="list-product__item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="product">
+                                    <a href="#" class="product__img">
+                                        <img src="img/img_product_9.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="product__title">Эван Warmos RX-30.0</a>
+                                    <div class="product__price">
+                                        <div class="product__price-cont">
+                                            34 560 450 <span>руб.</span>
+                                        </div>
+                                        <a href="#" class="button-in-basket"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+                                    </div>
+                                    <span class="product__price-credit">Кредит: <span class="price">340 045 руб.</span> в месяц</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="button-load-more"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Загрузить еще советов</a>
+                    </div>
+                </div>
                 <h2 class="lg">Советы покупателю <a href="#" class="heading-link">Все советы</a></h2>
 
                 <div class="box-news">
@@ -737,8 +1601,11 @@
 	
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>		
 	<script type="text/javascript" src="js/jquery-migrate.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
     <script type="text/javascript" src="js/slick.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
     <script type="text/javascript" src="js/bootstrap.min.js" ></script>
 	<script type="text/javascript" src="js/custom.js" ></script>
+    
 </body>
 </html>

@@ -105,8 +105,23 @@ $(function(){
 		$(this).text("Развернуть, чтобы узнать подробности");
 	});
     
-    
-    
+    if($("#slider_price").length){
+        $("#slider_price").slider({
+            min: 0,
+            max: 100000,
+            step:1,
+            values: [0,46000],
+            range: true,
+            stop: function(event, ui) {
+                jQuery("input#min_cost_1").val(jQuery("#slider_price").slider("values",0));
+                jQuery("input#max_cost_1").val(jQuery("#slider_price").slider("values",1));
+            },
+            slide: function(event, ui){
+                jQuery("input#min_cost_1").val(jQuery("#slider_price").slider("values",0));
+                jQuery("input#max_cost_1").val(jQuery("#slider_price").slider("values",1));
+            }
+         });
+    };
 });
 
 var handler = function(){
