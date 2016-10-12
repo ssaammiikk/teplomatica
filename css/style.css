@@ -2993,9 +2993,22 @@ aside{
     padding-right: 20px;
     color: inherit;   
 }
+.breadrumbs-list__link span {
+    border-bottom: 1px dotted transparent;
+}
+.breadrumbs-list__link:not(.breadrumbs-list__link_home) span {
+    border-bottom: 1px dotted;
+}
+.breadrumbs-list__link:hover:not(.breadrumbs-list__link_home) span {
+    border-bottom-color: transparent;
+}
 .breadrumbs-list__link:hover {
     text-decoration: underline;
 }
+.breadrumbs-list__link:hover:not(.breadrumbs-list__link_home) {
+    text-decoration: none;
+}
+
 .breadrumbs-list__link:after {
     content: "\f105";
     position: absolute;
@@ -3401,6 +3414,11 @@ aside{
     padding: 20px 0 0 0;
     display: block;
 }
+.box-products.only-three,
+.box-products.only-three .list-product__item {
+    padding-top: 0;
+}
+.box-products.only-three .list-product__item {margin-bottom: 15px;}
 .list-filter{
     display: block;
     padding: 24px 0 0 0;
